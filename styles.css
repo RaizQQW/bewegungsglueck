@@ -1063,3 +1063,30 @@ img {
 .section > .container > div ul {
     margin-bottom: 1.5rem;
 }
+
+/* Booking section (inline form) */
+.booking-section {
+    background: var(--bg-beige);
+}
+
+.booking-intro {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto 2rem;
+    color: var(--text-light);
+}
+
+.booking-form-wrapper {
+    max-width: 640px;
+    margin: 0 auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.booking-form-wrapper iframe {
+    width: 100%;
+    min-height: 700px;
+    border: 0;
+    display: block;
+}
