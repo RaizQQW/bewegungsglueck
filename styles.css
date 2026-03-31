@@ -6,20 +6,25 @@
 }
 
 :root {
-    --primary-color: #4a4a4a;
-    --primary-light: #6b6b6b;
-    --primary-dark: #2c2c2c;
-    --secondary-color: #8b7355;
-    --accent-color: #d4c5b0;
-    --text-dark: #2c2c2c;
-    --text-light: #666666;
-    --bg-light: #f5f5f5;
-    --bg-white: #ffffff;
-    --bg-beige: #faf8f5;
-    --border-color: #d0d0d0;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-    --shadow-hover: 0 4px 20px rgba(0, 0, 0, 0.12);
+    --primary-color: #5c534c;
+    --primary-light: #756a62;
+    --primary-dark: #3d3632;
+    --secondary-color: #8f6748;
+    --secondary-soft: #b0896a;
+    --accent-color: #e8d4c4;
+    --accent-soft: #f3e8de;
+    --warm-blush: #c9a090;
+    --text-dark: #3a342f;
+    --text-light: #6b625a;
+    --bg-light: #f7f0e8;
+    --bg-white: #fffefb;
+    --bg-beige: #faf4ec;
+    --border-color: #e0d4c8;
+    --shadow: 0 4px 24px rgba(90, 62, 42, 0.07);
+    --shadow-hover: 0 8px 32px rgba(90, 62, 42, 0.11);
     --transition: all 0.3s ease;
+    --radius-soft: 14px;
+    --radius-round: 18px;
 }
 
 html {
@@ -66,8 +71,19 @@ img {
 .section-title {
     font-size: 2rem;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 0.75rem;
     color: var(--secondary-color);
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.section-lead {
+    text-align: center;
+    max-width: 36rem;
+    margin: 0 auto 2.25rem;
+    font-size: 1.08rem;
+    line-height: 1.75;
+    color: var(--text-light);
     font-weight: 400;
 }
 
@@ -84,7 +100,7 @@ img {
 }
 
 .navbar.scrolled {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 24px rgba(90, 62, 42, 0.08);
 }
 
 .nav-container {
@@ -190,7 +206,7 @@ img {
     display: grid;
     grid-template-columns: 1fr;
     align-items: center;
-    background: linear-gradient(135deg, #f8f8f8 0%, #ffffff 100%);
+    background: linear-gradient(155deg, #fff9f4 0%, #f7ebe0 42%, #faf4ec 100%);
     padding: 2.5rem 1.5rem;
     gap: 2rem;
 }
@@ -213,8 +229,17 @@ img {
 .hero-subtitle {
     font-size: 1.25rem;
     color: var(--text-light);
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.75rem;
     font-weight: 400;
+}
+
+.hero-tagline {
+    font-family: 'Caveat', cursive;
+    font-size: clamp(1.5rem, 4vw, 1.85rem);
+    color: var(--secondary-soft);
+    margin-bottom: 1.25rem;
+    line-height: 1.25;
+    font-weight: 500;
 }
 
 .hero-description {
@@ -239,7 +264,7 @@ img {
     max-width: 100%;
     height: auto;
     min-height: 300px;
-    border-radius: 10px;
+    border-radius: var(--radius-round);
     object-fit: cover;
     box-shadow: var(--shadow-hover);
 }
@@ -263,9 +288,9 @@ img {
     gap: 1rem;
     padding: 1.25rem 1.5rem;
     background: var(--bg-white);
-    border-radius: 10px;
+    border-radius: var(--radius-soft);
     box-shadow: var(--shadow);
-    border-left: 4px solid var(--secondary-color);
+    border-left: 4px solid var(--warm-blush);
     color: var(--text-dark);
     font-weight: 600;
     transition: var(--transition);
@@ -275,6 +300,7 @@ img {
     box-shadow: var(--shadow-hover);
     transform: translateY(-2px);
     color: var(--secondary-color);
+    border-left-color: var(--secondary-color);
 }
 
 .hero-tile-num {
@@ -284,7 +310,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bg-beige);
+    background: var(--accent-soft);
     border-radius: 50%;
     font-family: 'Playfair Display', serif;
     font-size: 1.1rem;
@@ -310,27 +336,27 @@ img {
 }
 
 .btn-primary {
-    background: var(--text-dark);
-    color: white;
-    border: 1px solid var(--text-dark);
+    background: var(--secondary-color);
+    color: #fffefb;
+    border: 1px solid var(--secondary-color);
 }
 
 .btn-primary:hover {
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    background: var(--secondary-soft);
+    border-color: var(--secondary-soft);
     transform: translateY(-2px);
     box-shadow: var(--shadow-hover);
 }
 
 .btn-secondary {
-    background: var(--bg-beige);
+    background: var(--accent-soft);
     color: var(--text-dark);
     border: 1px solid var(--border-color);
 }
 
 .btn-secondary:hover {
     background: var(--accent-color);
-    border-color: var(--secondary-color);
+    border-color: var(--secondary-soft);
     color: var(--text-dark);
 }
 
@@ -419,8 +445,9 @@ img {
 .when-card {
     background: var(--bg-white);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: var(--radius-soft);
     box-shadow: var(--shadow);
+    border: 1px solid rgba(224, 212, 200, 0.6);
     transition: var(--transition);
 }
 
@@ -476,8 +503,8 @@ img {
 .service-card {
     background: var(--bg-beige);
     padding: 2.5rem;
-    border-radius: 10px;
-    border-top: 2px solid var(--secondary-color);
+    border-radius: var(--radius-soft);
+    border-top: 3px solid var(--warm-blush);
     transition: var(--transition);
 }
 
@@ -646,8 +673,9 @@ img {
 .price-highlight {
     background: var(--bg-white);
     padding: 2.5rem 2rem;
-    border-radius: 10px;
+    border-radius: var(--radius-soft);
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
     text-align: center;
     max-width: 640px;
     margin: 0 auto 2rem;
@@ -737,10 +765,12 @@ img {
 
 .faq-intro {
     text-align: center;
-    font-size: 1.15rem;
-    color: var(--secondary-color);
-    font-family: 'Playfair Display', serif;
-    margin-bottom: 2rem;
+    font-size: 1.05rem;
+    color: var(--text-light);
+    font-family: 'Source Sans 3', sans-serif;
+    max-width: 32rem;
+    margin: 0 auto 2rem;
+    line-height: 1.7;
 }
 
 .faq-list {
@@ -759,7 +789,7 @@ img {
 .faq-question {
     width: 100%;
     padding: 1.5rem;
-    background: var(--bg-light);
+    background: var(--accent-soft);
     border: none;
     text-align: left;
     font-size: 1rem;
@@ -773,7 +803,7 @@ img {
 }
 
 .faq-question:hover {
-    background: #e8e8e8;
+    background: var(--accent-color);
 }
 
 .faq-icon {
@@ -1324,9 +1354,10 @@ img {
 .booking-form-wrapper {
     max-width: 640px;
     margin: 0 auto;
-    border-radius: 8px;
+    border-radius: var(--radius-soft);
     overflow: hidden;
     box-shadow: var(--shadow);
+    border: 1px solid var(--border-color);
 }
 
 .booking-form-wrapper iframe {
