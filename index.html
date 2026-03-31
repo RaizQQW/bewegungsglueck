@@ -24,7 +24,7 @@
     <link rel="icon" type="image/avif" href="bilder/picture1.avif">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -43,12 +43,12 @@
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#home" class="nav-link">Start</a></li>
                 <li><a href="aboutme.html" class="nav-link">Über mich</a></li>
-                <li><a href="blog.html" class="nav-link">Blog</a></li>
-                <li><a href="#when" class="nav-link">Wann macht eine Behandlung Sinn?</a></li>
                 <li><a href="#services" class="nav-link">Behandlungsspektrum</a></li>
+                <li><a href="#when" class="nav-link">Wann ist eine Behandlung sinnvoll?</a></li>
                 <li><a href="#prices" class="nav-link">Preise</a></li>
                 <li><a href="#termin" class="nav-link">Termin</a></li>
                 <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="blog.html" class="nav-link">Blog</a></li>
             </ul>
         </div>
     </nav>
@@ -59,8 +59,8 @@
             <h1 class="hero-title">Bewegungsglück</h1>
             <p class="hero-subtitle">Pferdephysiotherapie & Pferdechiropraktik</p>
             <p class="hero-description">
-                Ich habe es mir zur Aufgabe gemacht, Pferden zu physischer und psychischer Gesundheit zu verhelfen, 
-                denn nur mit einem Körper im Gleichgewicht und absolutem Wohlbefinden ist ein 
+                Ich habe es mir zur Aufgabe gemacht, Pferden zu physischer und psychischer Gesundheit zu verhelfen,
+                denn nur mit einem Körper im Gleichgewicht und absolutem Wohlbefinden ist ein
                 gesundes, leistungsfähiges und glückliches Leben möglich.
             </p>
             <div class="hero-buttons">
@@ -71,41 +71,19 @@
         <div class="hero-image">
             <img src="bilder/picture1.avif" alt="Janice Gramatke mit Pferd" class="hero-img">
         </div>
-    </section>
-
-    <!-- When Treatment Makes Sense -->
-    <section id="when" class="section when-section">
-        <div class="container">
-            <h2 class="section-title">Wann macht eine Behandlung Sinn?</h2>
-            <div class="when-grid">
-                <div class="when-card">
-                    <h3>Akute Probleme</h3>
-                    <ul>
-                        <li>Lahmheiten</li>
-                        <li>Verspannungen</li>
-                        <li>Bewegungseinschränkungen</li>
-                        <li>Schmerzen</li>
-                    </ul>
-                </div>
-                <div class="when-card">
-                    <h3>Präventive Betreuung</h3>
-                    <ul>
-                        <li>Regelmäßige Check-ups</li>
-                        <li>Leistungserhaltung</li>
-                        <li>Beweglichkeitserhaltung</li>
-                        <li>Wohlbefinden steigern</li>
-                    </ul>
-                </div>
-                <div class="when-card">
-                    <h3>Sportpferde & Rehabilitation</h3>
-                    <ul>
-                        <li>Wettkampfvorbereitung</li>
-                        <li>Regeneration nach Belastung</li>
-                        <li>Nach Verletzungen & Operationen</li>
-                        <li>Leistungsoptimierung</li>
-                    </ul>
-                </div>
-            </div>
+        <div class="hero-tiles">
+            <a href="#termin" class="hero-tile">
+                <span class="hero-tile-num">1</span>
+                <span class="hero-tile-text">Termin vereinbaren</span>
+            </a>
+            <a href="#services" class="hero-tile">
+                <span class="hero-tile-num">2</span>
+                <span class="hero-tile-text">Behandlungsspektrum</span>
+            </a>
+            <a href="#prices" class="hero-tile">
+                <span class="hero-tile-num">3</span>
+                <span class="hero-tile-text">Preise</span>
+            </a>
         </div>
     </section>
 
@@ -113,35 +91,117 @@
     <section id="services" class="section services-section">
         <div class="container">
             <h2 class="section-title">Behandlungsspektrum</h2>
-            <div class="services-grid">
-                <div class="service-card">
-                    <h3>Physiotherapie</h3>
+            <div class="services-grid services-grid-main">
+                <div class="service-card service-card-text">
+                    <h3>Chiropraktik für Pferde</h3>
+                    <p class="service-card-lead">Beweglichkeit der Wirbelsäule als Schlüssel für Gesundheit und Leistung</p>
+                    <p>Die chiropraktische Behandlung konzentriert sich auf die Funktion der Wirbelsäule und der Gelenke sowie deren Einfluss auf das Nervensystem. Schon kleine Bewegungseinschränkungen einzelner Gelenke können die Biomechanik des gesamten Pferdes verändern und sich auf Zufriedenheit, Bewegung, Rittigkeit und Leistungsfähigkeit auswirken.</p>
+                    <p>Durch präzise Impulse werden eingeschränkte Gelenkbewegungen behandelt und die natürliche Beweglichkeit wieder unterstützt. Ziel ist es, das Zusammenspiel von Gelenken, Muskulatur und Nervensystem zu verbessern und den Körper des Pferdes wieder in ein funktionelles Gleichgewicht zu bringen.</p>
+                </div>
+                <div class="service-card service-card-text">
+                    <h3>Physiotherapie für Pferde</h3>
+                    <p class="service-card-lead">Unterstützung für Muskulatur und Regeneration</p>
+                    <p>Die physiotherapeutische Behandlung ergänzt die chiropraktische Arbeit, indem sie gezielt Muskulatur, Faszien und Bewegungsabläufe unterstützt. Sie hilft dabei, Verspannungen zu lösen, den Körper zu stabilisieren und langfristig eine gesunde Bewegung zu fördern.</p>
+                    <p><strong>Behandlungsmethoden</strong></p>
                     <ul>
-                        <li>Manuelle Therapie</li>
-                        <li>Massage</li>
-                        <li>Dehnungstechniken</li>
-                        <li>Bewegungstherapie</li>
-                        <li>Lymphdrainage</li>
+                        <li>Massage- und Faszientechniken</li>
+                        <li>Mobilisations- und Dehntechniken</li>
+                        <li>Bewegungstherapie und aktive Übungen</li>
+                        <li>Unterstützung im Muskelaufbau und Training</li>
                     </ul>
                 </div>
-                <div class="service-card">
-                    <h3>Chiropraktik</h3>
+            </div>
+            <div class="service-card service-card-wide service-card-text">
+                <h3>Weitere Leistungen</h3>
+                <ul class="service-list-two-col">
+                    <li>Manuelle Therapie</li>
+                    <li>Dry Needling</li>
+                    <li>Low-Level-Laser-Therapie (LLLT)</li>
+                    <li>Reizstromtherapie</li>
+                    <li>Schallwellentherapie</li>
+                    <li>Kinesiologisches Taping</li>
+                    <li>Triggerpunkttherapie</li>
+                    <li>Narbenbehandlung / Entstörung</li>
+                    <li>Blutegeltherapie (auf Anfrage)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- When Treatment Makes Sense -->
+    <section id="when" class="section when-section">
+        <div class="container">
+            <h2 class="section-title">Wann ist eine Behandlung sinnvoll?</h2>
+            <div class="when-intro">
+                <p>Der Wunsch eines jeden Pferdebesitzers ist ein gesundes und glückliches Pferd. Denn nur ein solches Pferd kann physisch wie psychisch langfristig die gewünschten Leistungen erbringen. Pferde sind Hochleistungssportler, die aufgrund ihrer körperlichen Gegebenheiten nicht dafür konzipiert sind, einen Menschen zu tragen.</p>
+                <p>Schauen wir auf den Leistungssport im Humanbereich, werden wir schnell feststellen, dass jeder dieser Sportler regelmäßig durch einen Manualtherapeuten betreut wird.</p>
+                <p><strong>Und warum?</strong> Durch die chiro- und physiotherapeutische Behandlung kann die Bewegungs- und Funktionsfähigkeit der Gelenke, Muskeln, Bänder und Sehnen wiederhergestellt, erhalten oder verbessert werden. Durch einen regelmäßigen Check-up können Sie Schonhaltungen, Fehlstellungen und vielen weiteren Belastungsbeschwerden vorbeugen. Viele Beschwerden lassen sich frühzeitig erkennen und behandeln, bevor sie sich zu größeren Problemen entwickeln.</p>
+            </div>
+            <div class="when-grid when-grid-four">
+                <div class="when-card">
+                    <h3><span class="when-emoji" aria-hidden="true">&#128014;</span> Veränderungen im Bewegungsablauf</h3>
                     <ul>
-                        <li>Wirbelsäulenbehandlung</li>
-                        <li>Gelenkmobilisation</li>
-                        <li>Blockaden lösen</li>
-                        <li>Strukturelle Anpassungen</li>
+                        <li>Lahmheiten oder Taktunreinheiten (Lahmheiten müssen bitte mit dem Tierarzt besprochen werden)</li>
+                        <li>Schwierigkeiten beim Angaloppieren, zeigt Kreuz- oder Außengalopp</li>
+                        <li>vermehrtes Stolpern</li>
                     </ul>
+                    <p class="when-takeaway">Solche Veränderungen können auf Bewegungseinschränkungen von Wirbelsäule, Gelenken oder Bindegewebe, wie Faszien und Muskeln, hinweisen.</p>
                 </div>
-                <div class="service-card">
-                    <h3>Weitere Leistungen</h3>
+                <div class="when-card">
+                    <h3><span class="when-emoji" aria-hidden="true">&#128014;</span> Probleme unter dem Reiter</h3>
                     <ul>
-                        <li>Befundung & Analyse</li>
-                        <li>Beratung & Aufklärung</li>
-                        <li>Trainingsempfehlungen</li>
-                        <li>Nachbetreuung</li>
+                        <li>Rittigkeitsprobleme</li>
+                        <li>Leistungsabfall</li>
+                        <li>fehlende Losgelassenheit</li>
+                        <li>Eingeschränkte Stellung oder Biegung</li>
+                        <li>Schwierigkeiten, den Rücken aufzuwölben und Last aufzunehmen</li>
+                        <li>Verwerfen im Genick</li>
+                        <li>Probleme in Übergängen</li>
                     </ul>
+                    <p class="when-takeaway">Häufig versucht das Pferd, körperliche Einschränkungen durch veränderte Bewegungsmuster zu kompensieren.</p>
                 </div>
+                <div class="when-card">
+                    <h3><span class="when-emoji" aria-hidden="true">&#128014;</span> Veränderungen im Verhalten</h3>
+                    <ul>
+                        <li>Sattelzwang oder Abwehr beim Satteln</li>
+                        <li>Empfindlichkeit beim Putzen im Rückenbereich</li>
+                        <li>Schweifschlagen oder Ohrenanlegen beim Reiten</li>
+                        <li>plötzliches Widersetzlichkeitsverhalten</li>
+                    </ul>
+                    <p class="when-takeaway">Schmerzen oder Verspannungen können sich auch über das Verhalten des Pferdes äußern.</p>
+                </div>
+                <div class="when-card">
+                    <h3><span class="when-emoji" aria-hidden="true">&#128014;</span> Weitere Indikationen</h3>
+                    <ul>
+                        <li>Muskelverspannungen</li>
+                        <li>ungleichmäßige Muskulatur</li>
+                        <li>Fehlstellungen</li>
+                        <li>Arthrose</li>
+                        <li>Kissing Spines</li>
+                        <li>Sehnenverletzungen</li>
+                        <li>Hufrollenproblematik</li>
+                        <li>Chronischer Husten</li>
+                        <li>Rückenschmerzen</li>
+                        <li>Nach einer OP, Krankheit oder dem Zahnarztbesuch</li>
+                        <li>Vor dem Antrainieren nach Verletzungspausen</li>
+                        <li>Bei Stute nach der Geburt eines Fohlens</li>
+                    </ul>
+                    <p class="when-takeaway">Solche Veränderungen können die Bewegungsfähigkeit des Pferdes langfristig beeinflussen.</p>
+                </div>
+            </div>
+            <div class="when-followup">
+                <h3>Welche Behandlung ist sinnvoll?</h3>
+                <p>Je nach Ursache können chiropraktische Techniken, physiotherapeutische Maßnahmen oder eine Kombination aus beidem sinnvoll sein. Nach einer Untersuchung wird die Behandlung individuell auf das jeweilige Pferd abgestimmt.</p>
+                <p><strong>Die obersten Ziele der Behandlung:</strong></p>
+                <ul class="when-goals-list">
+                    <li>Schmerzlinderung</li>
+                    <li>Wiederherstellung der physiologischen Bewegungsfähigkeit</li>
+                    <li>Lösen von Blockaden und Muskelverspannungen</li>
+                    <li>Auflösung von Fehlstellungen und Schonhaltungen</li>
+                    <li>Steigerung des Wohlbefindens</li>
+                    <li>Stressreduzierung</li>
+                </ul>
+                <p>Besonders wichtig ist mir hierbei die Zusammenarbeit mit den jeweiligen Trainern, den Tierärzten, Sattlern, Zahnärzten, Hufbearbeitern usw. Mein oberster Anspruch ist die ganzheitliche Betrachtungsweise des Tieres und deren Umfeld, um es langfristig und nachhaltig gesund zu erhalten.</p>
             </div>
         </div>
     </section>
@@ -151,30 +211,14 @@
         <div class="container">
             <h2 class="section-title">Preise</h2>
             <div class="prices-content">
-                <p class="prices-intro">
-                    Die Preise werden individuell nach Aufwand und Entfernung kalkuliert. 
-                    Für eine genaue Preisauskunft kontaktieren Sie mich gerne.
-                </p>
-                <div class="prices-grid">
-                    <div class="price-card">
-                        <h3>Erstbehandlung</h3>
-                        <p class="price-description">Umfassende Befundung und Behandlung</p>
-                        <p class="price-note">Preis auf Anfrage</p>
-                    </div>
-                    <div class="price-card">
-                        <h3>Folgebehandlung</h3>
-                        <p class="price-description">Regelmäßige Behandlungen</p>
-                        <p class="price-note">Preis auf Anfrage</p>
-                    </div>
-                    <div class="price-card">
-                        <h3>Pakete</h3>
-                        <p class="price-description">Mehrfachbehandlungen mit Vorteilen</p>
-                        <p class="price-note">Preis auf Anfrage</p>
-                    </div>
+                <div class="price-highlight">
+                    <p class="price-highlight-amount">Eine Behandlung für Pferde kostet <strong>130&nbsp;€</strong>.</p>
+                    <p>Dieser Preis enthält alle von mir angebotenen Therapiemöglichkeiten, inklusive der Anfahrt und Materialkosten.</p>
+                    <p class="price-highlight-legal">In den ausgewiesenen Preisen sind gemäß §&nbsp;19 UStG keine Umsatzsteuer enthalten.</p>
                 </div>
                 <div class="prices-contact">
-                    <p>Für eine individuelle Preisauskunft kontaktieren Sie mich gerne telefonisch oder per E-Mail.</p>
-                    <a href="#termin" class="btn btn-primary">Jetzt anfragen</a>
+                    <p>Fragen? Ich berate Sie gerne persönlich.</p>
+                    <a href="#termin" class="btn btn-primary">Termin vereinbaren</a>
                 </div>
             </div>
         </div>
@@ -184,53 +228,117 @@
     <section id="faq" class="section faq-section">
         <div class="container">
             <h2 class="section-title">Häufig gestellte Fragen</h2>
+            <p class="faq-intro">Das könnte spannend für Sie sein!</p>
             <div class="faq-list">
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Wie lange dauert eine Behandlung?
+                    <button type="button" class="faq-question">
+                        Wie viel kostet eine Behandlung?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Eine Behandlung dauert in der Regel zwischen 60 und 90 Minuten, abhängig von der Art der Behandlung und den individuellen Bedürfnissen des Pferdes.</p>
+                        <div class="faq-answer-inner">
+                            <p>Eine Behandlung für Pferde kostet 130&nbsp;€. Dieser Preis enthält alle von mir angebotenen Therapiemöglichkeiten, inklusive der Anfahrt und Materialkosten.</p>
+                            <p>In den ausgewiesenen Preisen sind gemäß §&nbsp;19 UStG keine Umsatzsteuer enthalten.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Wie bereite ich mein Pferd auf die Behandlung vor?
+                    <button type="button" class="faq-question">
+                        Wie läuft eine Behandlung ab?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Ihr Pferd sollte sauber und trocken sein. Bitte führen Sie es vor der Behandlung nicht zu stark, damit ich den natürlichen Bewegungsablauf beobachten kann.</p>
+                        <div class="faq-answer-inner">
+                            <p>Der erste Termin beinhaltet ein ausführliches Gespräch über den Ist-Zustand Ihres Pferdes. Nachfolgend schaue ich mir Ihr Pferd im Stand und im Laufen an und untersuche es auf Auffälligkeiten im Gewebe und den Gelenken. Anschließend löse ich muskuläre Verspannungen, Gelenkblockaden und bespreche mit Ihnen die zukünftigen Behandlungsmöglichkeiten und erstelle Ihnen im Anschluss gerne einen Trainingsplan.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
-                        Wie oft sollte mein Pferd behandelt werden?
+                    <button type="button" class="faq-question">
+                        Wann darf ich nach einer Behandlung wieder reiten?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Die Häufigkeit hängt von den individuellen Bedürfnissen ab. Bei akuten Problemen können mehrere Behandlungen in kurzen Abständen nötig sein. Für präventive Betreuung empfehle ich regelmäßige Check-ups alle 3-6 Monate.</p>
+                        <div class="faq-answer-inner">
+                            <p>Nach dem Behandlungstag sollte das Pferd drei bis fünf Tage nicht geritten werden. Empfehlenswert ist, dass Sie Ihr Pferd locker longieren, damit es sich an das neue Körpergefühl gewöhnen kann und um den entstandenen Muskelkater auskurieren zu können.</p>
+                            <p>Gerne gebe ich Ihnen für die zukünftige Arbeit mit Ihrem Pferd Tipps und bespreche einen Trainingsplan mit Ihnen.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button type="button" class="faq-question">
+                        Was muss ich vor dem Termin beachten?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Bitte arbeiten und füttern Sie Ihr Pferd 2&nbsp;Stunden vor der Behandlung nicht. (Weidegang und Leckerlis sind kein Problem.) Bitte sprechen Sie die Möglichkeiten des Behandlungsortes zuvor mit dem Stall ab.</p>
+                            <p>Je nach Behandlung plane ich 1–2&nbsp;Stunden ein. Ausführliche Tipps finden Sie im Abschnitt <a href="#vorbereitung">Vorbereitung auf den Termin</a>.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        Wie oft muss ein Pferd behandelt werden?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Die Häufigkeit der Behandlung kann ich erst einschätzen, wenn ich das Pferd kennengelernt habe und über alle Faktoren Kenntnis habe. Zu den Faktoren gehören z.&nbsp;B. ob es akute oder chronische Beschwerden sind, ob eine OP vorausgegangen ist usw.</p>
+                            <p>In der Regel kann ich sagen, dass viele Beschwerden zwischen der ersten und vierten Behandlung behoben werden können. Eine Zweitbehandlung erfolgt meist nach 14–30&nbsp;Tagen.</p>
+                            <p>Grundsätzlich empfehle ich Ihnen als präventive Maßnahme, Ihr Pferd 1–2× im Jahr durchchecken zu lassen, um möglichen Beschwerden zuvorzukommen.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
+                        Wie vereinbare ich einen Termin?
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-inner">
+                            <p>Gerne können Sie mich anrufen. Wenn ich gerade in einer Behandlung bin, melde ich mich schnellstmöglich bei Ihnen zurück. Alternativ können Sie mir über das Formular unter <a href="#termin">Termin vereinbaren</a> eine Anfrage schicken.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button type="button" class="faq-question">
                         Kommen Sie auch zu mir nach Hause?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Ja, ich bin mit meiner mobilen Praxis in ganz Norddeutschland unterwegs und komme gerne zu Ihnen und Ihrem Pferd.</p>
+                        <div class="faq-answer-inner">
+                            <p>Ja, ich bin mit meiner mobilen Praxis in ganz Norddeutschland unterwegs und komme gerne zu Ihnen und Ihrem Pferd.</p>
+                        </div>
                     </div>
                 </div>
                 <div class="faq-item">
-                    <button class="faq-question">
+                    <button type="button" class="faq-question">
                         Werden die Kosten von der Versicherung übernommen?
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer">
-                        <p>Dies hängt von Ihrer Versicherung ab. Einige Pferdeversicherungen übernehmen die Kosten für Physiotherapie und Chiropraktik. Bitte erkundigen Sie sich bei Ihrer Versicherung.</p>
+                        <div class="faq-answer-inner">
+                            <p>Dies hängt von Ihrer Versicherung ab. Einige Pferdeversicherungen übernehmen die Kosten für Physiotherapie und Chiropraktik. Bitte erkundigen Sie sich bei Ihrer Versicherung.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Vorbereitung auf den Termin -->
+    <section id="vorbereitung" class="section prep-section">
+        <div class="container">
+            <h2 class="section-title">Vorbereitung auf den Termin</h2>
+            <ul class="prep-list">
+                <li>Bitte füttern Sie Ihr Pferd bis zwei Stunden vor der Behandlung nicht (außer Heu/Gras o.&nbsp;Ä.).</li>
+                <li>Verhindern Sie körperlich anstrengende Tätigkeiten für Ihr Pferd ebenfalls zwei Stunden vor der Behandlung (Weidegang/Paddock ist kein Problem).</li>
+                <li>Halten Sie die Ausrüstung des Pferdes bereit (Sattel, Trense, Vorderzeug, Stalldecke; bei kälteren Temperaturen wäre eine Abschwitzdecke zum Warmhalten wünschenswert).</li>
+                <li>Bitte sprechen Sie die Möglichkeiten des Behandlungsortes vorher im Stall ab.</li>
+                <li>Je nach Behandlung plane ich 1–2&nbsp;Stunden ein; in Einzelfällen kann eine Behandlung länger dauern – planen Sie daher bitte genügend Zeit ein.</li>
+                <li>Im Anschluss bespreche ich mit Ihnen die weitere Vorgehensweise, z.&nbsp;B. Folgebehandlungen, die Nutzungsintensität für die Tage nach der Behandlung oder einen eventuellen Trainingsplan.</li>
+            </ul>
         </div>
     </section>
 

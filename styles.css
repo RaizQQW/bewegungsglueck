@@ -27,9 +27,10 @@ html {
 }
 
 body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.65;
+    font-size: 1.05rem;
     overflow-x: hidden;
 }
 
@@ -103,16 +104,16 @@ img {
 }
 
 .logo-img {
-    height: 50px;
+    height: 62px;
     width: auto;
     object-fit: contain;
-    max-width: 200px;
+    max-width: 280px;
 }
 
 .nav-menu {
     position: fixed;
     left: -100%;
-    top: 70px;
+    top: 78px;
     flex-direction: column;
     background: var(--bg-white);
     width: 100%;
@@ -184,7 +185,7 @@ img {
 
 /* Hero Section - Mobile First */
 .hero {
-    margin-top: 70px;
+    margin-top: 78px;
     min-height: auto;
     display: grid;
     grid-template-columns: 1fr;
@@ -248,6 +249,55 @@ img {
     border-radius: 10px;
     object-fit: cover;
     box-shadow: var(--shadow-hover);
+}
+
+.hero-tiles {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+}
+
+.hero-tile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-white);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--secondary-color);
+    color: var(--text-dark);
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.hero-tile:hover {
+    box-shadow: var(--shadow-hover);
+    transform: translateY(-2px);
+    color: var(--secondary-color);
+}
+
+.hero-tile-num {
+    flex-shrink: 0;
+    width: 2.25rem;
+    height: 2.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-beige);
+    border-radius: 50%;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+}
+
+.hero-tile-text {
+    text-align: left;
 }
 
 /* Buttons */
@@ -421,6 +471,13 @@ img {
     gap: 2rem;
 }
 
+.services-grid-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 0;
+}
+
 .service-card {
     background: var(--bg-beige);
     padding: 2.5rem;
@@ -465,6 +522,115 @@ img {
     font-weight: bold;
 }
 
+.service-card-text p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.75;
+}
+
+.service-card-text p:last-child {
+    margin-bottom: 0;
+}
+
+.service-card-lead {
+    font-size: 1.1rem;
+    color: var(--secondary-color) !important;
+    font-weight: 500;
+    margin-bottom: 1rem !important;
+}
+
+.service-card-wide {
+    margin-top: 2rem;
+    max-width: 100%;
+}
+
+.service-list-two-col {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.service-list-two-col li {
+    padding: 0.65rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+    color: var(--text-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.service-list-two-col li:last-child {
+    border-bottom: none;
+}
+
+.service-list-two-col li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+/* When section – intro & four tiles */
+.when-intro {
+    max-width: 900px;
+    margin: 0 auto 2.5rem;
+    text-align: left;
+}
+
+.when-intro p {
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.when-grid-four {
+    max-width: 1100px;
+}
+
+.when-emoji {
+    margin-right: 0.35rem;
+}
+
+.when-takeaway {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+.when-followup {
+    max-width: 900px;
+    margin: 3rem auto 0;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.when-followup h3 {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+.when-followup p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.when-goals-list {
+    list-style: disc;
+    margin: 1rem 0 1.5rem 1.25rem;
+    color: var(--text-light);
+    line-height: 1.8;
+}
+
+.when-goals-list li {
+    margin-bottom: 0.35rem;
+}
+
 /* Prices Section - Mobile First */
 .prices-section {
     background: var(--bg-light);
@@ -480,6 +646,43 @@ img {
     font-size: 1rem;
     color: var(--text-light);
     margin-bottom: 2.5rem;
+}
+
+.price-highlight {
+    background: var(--bg-white);
+    padding: 2.5rem 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    text-align: center;
+    max-width: 640px;
+    margin: 0 auto 2rem;
+}
+
+.price-highlight p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.price-highlight p:last-child {
+    margin-bottom: 0;
+}
+
+.price-highlight-amount {
+    font-size: 1.2rem;
+    color: var(--text-dark) !important;
+}
+
+.price-highlight-amount strong {
+    color: var(--secondary-color);
+    font-size: 1.75rem;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+.price-highlight-legal {
+    font-size: 0.95rem !important;
+    margin-top: 1.25rem !important;
 }
 
 .prices-grid {
@@ -537,6 +740,14 @@ img {
     background: var(--bg-white);
 }
 
+.faq-intro {
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--secondary-color);
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 2rem;
+}
+
 .faq-list {
     max-width: 800px;
     margin: 0 auto;
@@ -587,13 +798,30 @@ img {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+    max-height: 4000px;
 }
 
-.faq-answer p {
+.faq-answer-inner {
     padding: 1.5rem;
     color: var(--text-light);
     line-height: 1.8;
+}
+
+.faq-answer-inner p {
+    margin-bottom: 1rem;
+}
+
+.faq-answer-inner p:last-child {
+    margin-bottom: 0;
+}
+
+.faq-answer-inner a {
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.faq-answer-inner a:hover {
+    color: var(--text-dark);
 }
 
 /* Contact Section - Mobile First */
@@ -903,6 +1131,11 @@ img {
         min-height: 400px;
     }
 
+    .hero-tiles {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 900px;
+    }
+
     .about-text p {
         font-size: 1.1rem;
         text-align: left;
@@ -988,7 +1221,8 @@ img {
     }
 
     .logo-img {
-        height: 60px;
+        height: 78px;
+        max-width: 300px;
     }
 
     .section-title {
@@ -998,6 +1232,25 @@ img {
     .hero {
         grid-template-columns: 1fr 1.2fr;
         gap: 3rem;
+    }
+
+    .hero-tiles {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: none;
+        gap: 1.25rem;
+    }
+
+    .services-grid-main {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-list-two-col {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+
+    .when-grid-four {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .hero-content {
@@ -1089,4 +1342,37 @@ img {
     min-height: 700px;
     border: 0;
     display: block;
+}
+
+/* Vorbereitung auf den Termin */
+.prep-section {
+    background: var(--bg-white);
+}
+
+.prep-list {
+    max-width: 720px;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+}
+
+.prep-list li {
+    position: relative;
+    padding: 1rem 0 1rem 1.75rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-light);
+    line-height: 1.75;
+}
+
+.prep-list li:last-child {
+    border-bottom: none;
+}
+
+.prep-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 1rem;
+    color: var(--secondary-color);
+    font-weight: bold;
 }
